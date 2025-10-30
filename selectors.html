@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector nâng cao </title>
+
+    <style>
+        /* Bộ chọn phần tử */
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        p {
+            color: #333;
+            font-size: 16px;
+        }
+
+        /* Bộ chọn lớp */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        /* Bộ chọn ID */
+        #menu {
+            background-color: #e0f0ff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Bộ chọn thuộc tính */
+        input[type="text"] {
+            border: 2px solid #4CAF50;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* Bộ chọn con */
+        div > p {
+            color: darkred;
+            font-style: italic;
+        }
+
+        /* Bộ chọn giả */
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        p:first-child {
+            color: purple;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body style="font-family:Arial, sans-serif; margin:30px;">
+
+    <h1>CSS selector nâng cao</h1>
+
+    <!-- Bộ chọn ID -->
+    <div id="menu">
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Bộ chọn phần tử và lớp -->
+    <p>Đây là đoạn văn đầu tiên trong trang - được áp dụng <b>p:first-child</b>.</p>
+    <p class="highlight">Đây là đoạn văn được áp dụng <b>class="highlight"</b>.</p>
+
+    <!-- Bộ chọn con -->
+    <div>
+        <h2>Phần nội dung trong div</h2>
+        <p>Đây là đoạn <b>div > p</b> (bộ chọn con).</p>
+    </div>
+
+    <!-- Bộ chọn thuộc tính -->
+    <h3>Form nhập thông tin</h3>
+    <form>
+        <label>Họ tên: </label>
+        <input type="text" placeholder="Nhập họ tên...">
+        <br><br>
+        <label>Mật khẩu: </label>
+        <input type="password" placeholder="Nhập mật khẩu...">
+    </form>
+
+</body>
+</html>
